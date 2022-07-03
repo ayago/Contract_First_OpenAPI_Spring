@@ -1,4 +1,4 @@
-package adrianyago.examples.spring.openapi.generated.api;
+package adrianyago.examples.springboot.contractfirstapi.sample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

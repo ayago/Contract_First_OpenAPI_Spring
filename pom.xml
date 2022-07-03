@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>adrianyago-examples</groupId>
-	<artifactId>spring-openapi-generated-api</artifactId>
+	<artifactId>springboot-contractfirstapi-sample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-openapi-generated-api</name>
+	<name>Spring_Boot_Contract_First_API_Sample</name>
 	<description>Spring Boot and Open API generator based implementation of generated models and API. Demonstrates use of customized endpoints</description>
 	<properties>
 		<java.version>11</java.version>
