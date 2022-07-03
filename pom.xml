@@ -73,6 +73,7 @@
 							<inputSpec>${project.basedir}/src/main/resources/openapi.yaml</inputSpec>
 							<generatorName>spring</generatorName>
 							<configOptions>
+								<legacyDiscriminatorBehavior>false</legacyDiscriminatorBehavior>
 								<reactive>true</reactive>
 								<interfaceOnly>true</interfaceOnly>
 								<packageName>adrianyago.examples.springboot.contractfirstapi.sample.openapi</packageName>

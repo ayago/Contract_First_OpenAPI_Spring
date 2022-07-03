@@ -42,9 +42,7 @@ paths:
           content:
             application/json:
               schema:
-                oneOf:
-                  - $ref: '#/components/schemas/Cat'
-                  - $ref: '#/components/schemas/Dog'
+                $ref: '#/components/schemas/RecordResponse'
     put:
       tags:
         - pet
@@ -59,6 +57,10 @@ paths:
       responses:
         '200':
           description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateResponse'
 components:
   schemas:
     Dog:
@@ -76,6 +78,11 @@ components:
           type: boolean
         age:
           type: integer
+    RecordResponse:
+      type: object
+      oneOf:
+        - $ref: '#/components/schemas/Cat'
+        - $ref: '#/components/schemas/Dog'
     PetByAge:
       type: object
       properties:
@@ -95,3 +102,9 @@ components:
           type: boolean
       required:
         - pet_type
+    UpdateResponse:
+      type: object
+      properties:
+        pet_type:
+          type: string
+          enum: [ Cat, Dog ]
