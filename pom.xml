@@ -76,6 +76,8 @@
 								<legacyDiscriminatorBehavior>false</legacyDiscriminatorBehavior>
 								<reactive>true</reactive>
 								<interfaceOnly>true</interfaceOnly>
+								<useBeanValidation>false</useBeanValidation>
+								<skipDefaultInterface>true</skipDefaultInterface>
 								<packageName>adrianyago.examples.springboot.contractfirstapi.sample.openapi</packageName>
 								<apiPackage>adrianyago.examples.springboot.contractfirstapi.sample.openapi.api</apiPackage>
 								<modelPackage>adrianyago.examples.springboot.contractfirstapi.sample.openapi.models</modelPackage>
